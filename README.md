@@ -80,7 +80,12 @@ Prepare to deploy your project.
 ```
 ## Deploy the Item Catalog project.
 * Clone and setup your Item Catalog project from the Github repository you created earlier in this Nanodegree program.
-* Set it up in your server so that it functions correctly when visiting your server’s IP address in a browser. Make sure that your .git directory is not publicly accessible via a browser!
+```
+ git init
+ git clone
+```
+* Various configurations with .conf files and .wsgi files along with setting up virtual environment with venv
+
 ## A list of any third-party resources you made use of to complete this project.
  * Digital Ocean https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts
  * Flask Documentation http://flask.pocoo.org/docs/0.12/deploying/
