@@ -11,7 +11,9 @@ Udacity's Fullstack Web Developer Final Project
 * Follow the instructions provided to SSH into your server.
 ## Secure your server.
 * Update all currently installed packages.
-** Test
+ ''' sudo apt-get update
+ sudo apt-get upgrade
+ '''
 * Change the SSH port from 22 to 2200. Make sure to configure the Lightsail firewall to allow it.
 * Configure the Uncomplicated Firewall (UFW) to only allow incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123).
 * Create a new user account named grader.
