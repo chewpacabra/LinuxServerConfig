@@ -16,9 +16,31 @@ Udacity's Fullstack Web Developer Final Project
   sudo apt-get upgrade
  ```
 * Change the SSH port from 22 to 2200. Make sure to configure the Lightsail firewall to allow it.
+ * Update sshd_config from port 22 to 2200
+```
+ sudo nano /etc/ssh/sshd_config
+ :wq!
+```
 * Configure the Uncomplicated Firewall (UFW) to only allow incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123).
+```
+ sudo ufw allow 2200
+ sudo ufw allow http
+ sudo ufw allow ntp
+ sudo ufw enable
+ sudo ufw status
+ sudo service sshd restart
+ ```
 * Create a new user account named grader.
+```
+ sudo apt-get install finger
+ sudo adduser grader
+ sudo -aG sudo grader
+ su grader (logins to grader)
+ ```
 * Give grader the permission to sudo.
+```
+  sudo -aG sudo grader
+```
 * Create an SSH key pair for grader using the ssh-keygen tool.
 Prepare to deploy your project.
 * Configure the local timezone to UTC.
