@@ -60,9 +60,24 @@ Udacity's Fullstack Web Developer Final Project
  ```
 Prepare to deploy your project.
 * Configure the local timezone to UTC.
+```
+ sudo dpkg-reconfigure tzdata
+```
 * Install and configure Apache to serve a Python mod_wsgi application.
+```
+ sudo apt-get install apache2
+ sudo apt-get insatll libapache2-mod-wsgi
+```
 * Install and configure PostgreSQL:
+```
+ sudo apt-get install postgresql
+```
 * Install git.
+```
+ sudo apt-get install git
+ git config --global user.name "username"
+ git config --global user.email "email@domain.com"
+```
 ## Deploy the Item Catalog project.
 * Clone and setup your Item Catalog project from the Github repository you created earlier in this Nanodegree program.
 * Set it up in your server so that it functions correctly when visiting your server’s IP address in a browser. Make sure that your .git directory is not publicly accessible via a browser!
