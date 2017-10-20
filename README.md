@@ -42,6 +42,22 @@ Udacity's Fullstack Web Developer Final Project
   sudo -aG sudo grader
 ```
 * Create an SSH key pair for grader using the ssh-keygen tool.
+ * Open Git locally
+ ```
+  ssh-keygen
+ ```
+ * Toggle back to Linux Server
+ ```
+  mkdir .ssh
+  touch .ssh/authorized_keys
+  nano .ssh/authorized_keys
+ ```
+ * Update authorized_keys with the key from .pub file made on your local machine
+ ```
+  chmod 700 .ssh
+  chmod 644 .ssh/authorized_keys
+  exit
+ ```
 Prepare to deploy your project.
 * Configure the local timezone to UTC.
 * Install and configure Apache to serve a Python mod_wsgi application.
